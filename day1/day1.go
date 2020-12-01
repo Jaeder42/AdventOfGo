@@ -31,7 +31,7 @@ func findPartOne(array []string) int {
 		num, err := strconv.Atoi(element)
 		if err != nil {
 		} else {
-			for i := index; i < len(array); i++ {
+			for i := index + 1; i < len(array); i++ {
 				j, err := strconv.Atoi(array[i])
 				if err != nil {
 				} else {
@@ -49,11 +49,11 @@ func findPartTwo(array []string) int {
 		num, err := strconv.Atoi(element)
 		if err != nil {
 		} else {
-			for i := index; i < len(array); i++ {
+			for i := index + 1; i < len(array); i++ {
 				num2, err := strconv.Atoi(array[i])
 				if err != nil {
 				} else {
-					for j := i; j < len(array); j++ {
+					for j := i + 1; j < len(array); j++ {
 						num3, err := strconv.Atoi(array[j])
 						if err != nil {
 						} else {
