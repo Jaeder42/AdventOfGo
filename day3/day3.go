@@ -39,10 +39,7 @@ func calcTree(slope [][]string, xStep int, yStep int) int {
 		if slope[i][xIndex] == "#" {
 			totalTrees++
 		}
-		xIndex = xStep + xIndex
-		if xIndex >= len(slope[i]) {
-			xIndex = xIndex % (len(slope[i]))
-		}
+		xIndex = (xStep + xIndex) % (len(slope[i]))
 	}
 	return totalTrees
 }
