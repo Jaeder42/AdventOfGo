@@ -1,11 +1,11 @@
 package main
 
 import (
-	"./day3"
+	"./day4"
 )
 
 func main() {
 	// day1.DayOne()
 	// day2.DayTwo()
-	day3.DayThree()
+	day4.DayFour()
 }
